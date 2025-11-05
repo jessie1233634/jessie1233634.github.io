@@ -1,10 +1,29 @@
+:root {
+    --primary-red: #dc3545;
+    --just-red: rgb(84, 8, 8);
+  }
+  
+a:hover{
+    color:rgb(13, 132, 237);
+    background-color: rgba(21, 248, 5);
+}
+
+a{
+    color:var(--just-red);
+    text-decoration: none;
+    background-color: rgba(4, 247, 227, 0.478);
+    padding: 20px 10px 20px 10px;
+    margin-left: 50px;  
+}
+/* This is a comment */ 
+
 #heading1{
     color: rgb(75, 218, 75);
     background-color: aquamarine;
 }
 
 .text-pink{
-    color: rgb(194, 46, 165);
+    color:rgb(194, 46, 165);
 }
 
 .text-background-yellow{
@@ -12,16 +31,24 @@
 }
 
 body{
-    background-image: url("../assets/img/sample.png");
+    background-image: url("images/mcgill-university-logo.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
-    color: rgb(235, 109, 19);
+    color:rgb(235, 109, 19);
+     font-family: "momo signature","lucida handwriting",cursive;
+  
 }
 
 h1{
     font-size: 3.8rem;
+    font-family: "momo signature";
+    font-style: italic;
+    font-weight:500;
+   
 }
+
+
 
 .text-para{
     font-size: 1.8rem;
@@ -33,6 +60,10 @@ h1{
     white-space: nowrap;
 }
 
-a{
-color: yellow;
-}
+@media (max-width: 576px)  {
+    body {
+      background-color: rgb(230, 173, 227);
+    }
+    
+  }
+  

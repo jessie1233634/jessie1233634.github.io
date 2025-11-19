@@ -1,0 +1,338 @@
+/************************************
+ * Global base styles
+ ************************************/
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 80px 0;  
+}
+
+/* Limit line width for good readability */
+section p, section ul {
+  max-width: 800px;
+}
+
+
+
+
+
+/************************************
+ * Navbar
+ ************************************/
+
+.navbar {
+  background-color: #f3e1bde9 !important; 
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+}
+
+/* Brand logo/name styling */
+.navbar-brand {
+  color: #003366 !important; 
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #333 !important; 
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important; 
+  text-decoration: underline;
+}
+
+/* Navbar toggler (hamburger) styling */
+.navbar-toggler {
+  border-color: #003366;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: #003366;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #003366;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+
+.navbar-toggler-icon::after {
+  top: 6px;
+}
+
+ /* Align dropdown panel to the right */
+  .navbar-collapse {
+    text-align: right !important;
+  }
+/* hamburger end */
+
+
+/************************************
+ * About
+ ************************************/
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f3eb;
+  padding: 60px 20px;
+}
+
+ #about img {
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Download CV Button Styling */
+.btn-download {
+  background-color: #0d6efd; 
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+/* Download CV Button style end */
+
+
+
+/************************************
+ * Skills
+ ************************************/
+
+#skills {
+  background-color: #ecf2e3; 
+  padding: 80px 0;
+  text-align: left;
+}
+
+#skills h2 {
+  color: #003366;
+}
+
+/* Remove default bullet style */
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Custom blue bullets */
+#skills li::before {
+  content: "• ";
+  color: #0d6efd; 
+}
+
+/* Skill category headings */
+#skills h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+
+/************************************
+ * Experience
+ ************************************/
+
+#experience {
+  background: #f7f3eb;
+  padding: 80px 0;
+}
+
+/* Experience section title color */
+#experience h2 {
+  color: #003366;
+}
+
+/* tighten list spacing slightly inside cards */
+#experience ul li {
+  margin-bottom: 6px;
+}
+
+/* Custom blue bullet style */
+#experience li::before {
+  content: "• ";
+  color: #0d6efd;
+}
+
+
+
+/************************************
+ * Education
+ ************************************/
+
+#education {
+  background-color: #ecf2e3;
+  position: relative;
+}
+
+/* Section title styling */
+#education h2 {
+  color: #003366;
+}
+
+/* Timeline structure */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 30px;
+  border-left: 3px solid #0d6efd; /* blue timeline line */
+}
+
+/* Each entry in the timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #0d6efd;
+}
+
+/* Container area */
+.timeline-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Title and text styles inside container */
+.timeline-content h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  margin-bottom: 8px;
+}
+
+
+
+/************************************
+ * Contact
+ ************************************/
+
+#contact {
+  background-color: #f7f3eb;
+  padding: 80px 0;
+}
+
+/* Center all text and elements */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #003366;
+}
+
+/* Regular text under contact header*/
+#contact p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact links */
+#contact a {
+  color: #0d6efd;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Subtext style */
+#contact .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom LinkedIn "in" logo */
+.linkedin-logo {
+  display: flex; /* centers properly */
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #9bce0263;
+  color: #3d773c;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1rem auto; /* centers the logo */
+}
+
+.linkedin-logo:hover {
+  background-color: #ecf2e3; 
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer text - copyright line */
+#contact .text-muted.small {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+

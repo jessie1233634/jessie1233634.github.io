@@ -15,8 +15,13 @@ section p, section ul {
   max-width: 800px;
 }
 
+:root {
+  scroll-padding-top: 78px; /* !!!!!!!!!!!!ISSUE!!!!!!!!!!Mobile version the section top moves when drop down is gone - show example. section appears right under navbar */
+}
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 /************************************
@@ -92,6 +97,7 @@ section p, section ul {
 /* hamburger end */
 
 
+
 /************************************
  * About
  ************************************/
@@ -153,10 +159,9 @@ section p, section ul {
   padding-left: 0;
 }
 
-/* Custom blue bullets */
+/* Custom bullets */
 #skills li::before {
-  content: "• ";
-  color: #0d6efd; 
+  content: "• "; 
 }
 
 /* Skill category headings */
@@ -186,10 +191,9 @@ section p, section ul {
   margin-bottom: 6px;
 }
 
-/* Custom blue bullet style */
+/* Custom bullet */
 #experience li::before {
   content: "• ";
-  color: #0d6efd;
 }
 
 

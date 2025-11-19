@@ -162,6 +162,7 @@ html {
 /* Custom bullets */
 #skills li::before {
   content: "• "; 
+  color: #333;
 }
 
 /* Skill category headings */
@@ -194,6 +195,7 @@ html {
 /* Custom bullet */
 #experience li::before {
   content: "• ";
+  color: #333;
 }
 
 

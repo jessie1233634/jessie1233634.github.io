@@ -16,7 +16,14 @@ section p, section ul {
 }
 
 :root {
-  scroll-padding-top: 78px; /* !!!!!!!!!!!!ISSUE!!!!!!!!!!Mobile version the section top moves when drop down is gone - show example. section appears right under navbar */
+  scroll-padding-top: 78px; /* Desktop */
+}
+
+/* Mobile fix: navbar is taller when collapsed */
+@media (max-width: 991px) {
+  :root {
+    scroll-padding-top: 285px ; 
+  }
 }
 
 html {
@@ -131,7 +138,7 @@ html {
 }
 
 .btn-download:hover {
-  background-color: #0056b3; 
+  background-color: #add5fe; 
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
